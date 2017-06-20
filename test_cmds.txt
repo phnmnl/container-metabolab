@@ -1,1 +1,3 @@
 /bin/true
+which run_MetaboLab1D.sh
+which matlabExecutable
