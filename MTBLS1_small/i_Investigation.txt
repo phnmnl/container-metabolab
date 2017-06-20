@@ -39,7 +39,7 @@ Study Title	""
 Study Description	""
 Comment[Study Grant Number]	""
 Comment[Study Funding Agency]	""
-Study Submission Date	"2017-05-26"
+Study Submission Date	"2017-06-16"
 Study Public Release Date	"2030-01-01"
 Study File Name	"s_NEWST123.txt"
 STUDY DESIGN DESCRIPTORS
