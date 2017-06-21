@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /mydata
-wget -O MTBLS1_small.zip https://github.com/phnmnl/container-metabolab/tree/develop/MTBLS1_small.zip
+wget --no-check-certificate -O MTBLS1_small.zip https://github.com/phnmnl/container-metabolab/tree/develop/MTBLS1_small.zip
 unzip MTBLS1_small.zip 
 cd MTBLS1_small
 mv * ../
