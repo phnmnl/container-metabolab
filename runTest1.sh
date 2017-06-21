@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cd /mydata
+wget -O MTBLS1_small.zip https://github.com/phnmnl/container-metabolab/MTBLS1_small.zip
+unzip MTBLS1_small.zip 
+cd MTBLS1_small
+mv * ../
+rm -r MTBLS1_small.zip MTBLS1_small
 
 # check that software was added to image 
 if ! [ -e "/usr/local/bin/MATLAB_Runtime" ]; then
