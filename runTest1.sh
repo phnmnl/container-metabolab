@@ -5,6 +5,7 @@ wget -O MTBLS1_small.zip https://github.com/phnmnl/container-metabolab/MTBLS1_sm
 unzip MTBLS1_small.zip 
 cd MTBLS1_small
 mv * ../
+cd ..
 rm -r MTBLS1_small.zip MTBLS1_small
 
 # check that software was added to image 
