@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--This is a configuration file for the integration of a tools into Galaxy (https://galaxyproject.org/).-->
+<!--Proposed Tool Section: [PhenoMeNal]-->
+<!--<tool id="metabolab" name="metabolab" version="0.1" force_history_refresh="True">-->
+<tool id="metabolab" name="metabolab" version="0.99">
+  <requirements>
+        <container type="docker">phnmnl/metabolab</container>
+  </requirements>
+  <description>Software for processing and analysing NMR data.</description>
+  <command><![CDATA[
+	mkdir outfolder1;
+	java -jar /usr/local/bin/MetFragParameterExport.jar InputFile=$mzmlfile OutputFolder=outfolder1 MetFragDatabaseType=$MetFragDatabaseType  IgnoreEmptyParameters=True;
+  ]]>
+  </command>
+  <inputs>
+    <param name="mzmlfile" type="data" format="txt" optional="False" label="Input file with peak list in mzml format" />
+    <param name="MetFragDatabaseType" type="select" value="KEGG" optional="False" label="Database" help="Database to which queries are sent.">
+      <option value="KEGG" selected="True">KEGG</option>
+      <option value="PubChem" selected="False">PubChem</option>
+      <option value="ChemSpider" selected="False">ChemSpider</option>
+      <option value="MetChem" selected="False">MetChem</option>
+    </param>
+  </inputs>
+  <outputs>
+	<collection type="list" label="MetFrag Parameters" format="txt" name="spectrum" >
+            <discover_datasets pattern="__designation_and_ext__" directory="outfolder1" />
+	</collection>
+  </outputs>
+  <help>This is very helpful somehow.</help>
+</tool>
