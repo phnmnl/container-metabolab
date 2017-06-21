@@ -1,4 +1,2 @@
-#!/bin/bash
-# /usr/local/bin/metabolab1d/run_MetaboLab1D.sh /usr/local/bin/MATLAB_Runtime/v91
-which run_MetaboLab1D.sh
-which matlabExecutable
+/usr/local/bin/metabolab1d/run_MetaboLab1D.sh /usr/local/bin/MATLAB_Runtime/v91
+
