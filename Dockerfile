@@ -13,7 +13,6 @@ unzip -d /usr/local/bin /usr/local/bin/MATLAB_Runtime.zip && \
 unzip -d /usr/local/bin/metabolab1d /usr/local/bin/metabolab1d.zip && \
 rm -r /usr/local/bin/metabolab1d.zip && \
 rm -r /usr/local/bin/MATLAB_Runtime.zip && \
-apt-get purge -y wget zip unzip && \
 apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD runTest1.sh /usr/local/bin/runTest1.sh
