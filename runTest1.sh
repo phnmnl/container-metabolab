@@ -24,7 +24,7 @@ echo "Installation of MATLAB Runtime and non-gui metabolab probably OK" > instal
 
 /usr/local/bin/metabolab1d/run_MetaboLab1D.sh /usr/local/bin/MATLAB_Runtime/v91 /mydata/container_script.ml
 
-echo "hello, hello, hello world"
+echo "hello, hello, hello world!"
 
 if cmp -s s_NEWST123.txt outputted_files/s_NEWST123.txt; then
     echo "s files have the same content" > output_check
