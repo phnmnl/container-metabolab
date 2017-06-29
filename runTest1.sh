@@ -39,7 +39,7 @@ if cmp -s a_NEWST123_metabolite_profiling_NMR_spectroscopy.txt outputted_files/a
     echo "a_*.txt isatab assay files identical"
     echo "a_*.txt isatab assay files identical" >> output_check
 else
-    echo "a_*.txt isatab assay files not identical - a_.txt file problem" >
+    echo "a_*.txt isatab assay files not identical - a_.txt file problem" 
     echo "a_*.txt isatab assay files not identical - a_.txt file problem" >> output_check
 fi
 
