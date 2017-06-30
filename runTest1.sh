@@ -50,7 +50,7 @@ else
 	exit 1
 fi
 
-if [ -e "metabolabnotgui.mat"]; then
+if [ -e "metabolabnotgui.mat" ]; then
 	echo "mat file exists"
 else
 	echo "mat file does not exist"
