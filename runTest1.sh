@@ -50,3 +50,5 @@ else
     echo "batman files do NOT have the same content" 
     echo "batman files do NOT have the same content" >> output_check
 fi
+
+diff MTBLS1output_batman.csv outputted_files/MTBLS1output_batman.csv
