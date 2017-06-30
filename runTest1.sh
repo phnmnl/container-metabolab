@@ -43,12 +43,17 @@ else
     echo "a_*.txt isatab assay files not identical - a_.txt file problem" >> output_check
 fi
 
-if cmp -s MTBLS1output_batman.csv outputted_files/MTBLS1output_batman.csv; then
-    echo "batman files have the same content"
-    echo "batman files have the same content" >> output_check
+if [ -e "MTBLS1output_batman.csv" ]; then
+	echo "Batman file exists"
 else
-    echo "batman files do NOT have the same content" 
-    echo "batman files do NOT have the same content" >> output_check
+	echo "Batman file does not exist"
+	exit 1
 fi
 
-diff MTBLS1output_batman.csv outputted_files/MTBLS1output_batman.csv
+if [ -e "metabolabnotgui.mat"]; then
+	echo "mat file exists"
+else
+	echo "mat file does not exist"
+fi
+ls MTBLS1*
+
