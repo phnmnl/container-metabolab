@@ -55,5 +55,6 @@ if [ -e "metabolabnotgui.mat" ]; then
 else
 	echo "mat file does not exist"
 fi
+echo "listing some of the files created"
 ls MTBLS1*
 
