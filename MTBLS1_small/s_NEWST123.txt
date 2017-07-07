@@ -1,0 +1,5 @@
+"Source Name"	"Characteristics[Organism]"	"Term Source REF"	"Term Accession Number"	"Characteristics[Organism part]"	"Term Source REF"	"Term Accession Number"	"Protocol REF"	"Sample Name"	"Term Source REF"	"Term Accession Number"
+"phenoMeNal"	""	""	""	""	""	""	"NMR assay"	"ABC1"	""	""
+"phenoMeNal"	""	""	""	""	""	""	"NMR assay"	"ABC2"	""	""
+"phenoMeNal"	""	""	""	""	""	""	"NMR assay"	"ABC3"	""	""
+"phenoMeNal"	""	""	""	""	""	""	"NMR assay"	"ABC4"	""	""

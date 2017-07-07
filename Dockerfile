@@ -16,13 +16,16 @@ rm -r /usr/local/bin/MATLAB_Runtime.zip && \
 apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD runTest1.sh /usr/local/bin/runTest1.sh
+ADD runMetabolab.sh /usr/local/bin/runMetabolab.sh
 RUN chmod +x /usr/local/bin/runTest1.sh
+RUN chmod +x /usr/local/bin/runMetabolab.sh
 RUN chmod +x /usr/local/bin/metabolab1d/run_MetaboLab1D.sh
 ENV PATH=/usr/local/bin:$PATH
 
 WORKDIR /mydata
 
 #ENTRYPOINT ["/usr/local/bin/metabolab1d/run_MetaboLab1D.sh","/usr/local/bin/MATLAB_Runtime/v91","/mydata/container_script.ml"]
-ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
+#ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
+ENTRYPOINT ["/usr/local/bin/runMetabolab.sh"]
 
 

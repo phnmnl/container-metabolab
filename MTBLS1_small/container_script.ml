@@ -68,7 +68,7 @@ metabolabParameters
     exportPath:      /mydata      % path for mat/bruker/tree file export
     brukerExpNumbers: bruker
     brukerDataSets:   bruker
-    exportFile:      MTBLS1output  % directory name for mat/bruker/tree file export
+    exportFile:      myoutput  % directory name for mat/bruker/tree file export
     moveSpectraBetweenWorkspaces: 0                         % Avoid duplication of data to save memory (if 1)
 endMetabolabParameters
 
