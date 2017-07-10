@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #cd /mydata
-echo "first hello" > outputfile
+echo "first hello" >> outputfile
 
 
 
@@ -16,6 +16,4 @@ echo "first hello" > outputfile
 
 echo "second hello" >> outputfile
 
-ls -lrt 
 
-echo "third hello" >> outputfile
