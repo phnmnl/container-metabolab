@@ -8,5 +8,5 @@ cd $pwd
 docker rm -f imeta_container$1
 # path below is path to directory containing your container_script.ml
 #docker  run  -t -v  /ldata/reedma/docker_stuff/container-metabolab/MTBLS1_small:/mydata -w /mydata --name imeta_container$1 imeta_image$1 #works
-docker run --name imeta_container$1 imeta_image$1 # now works
-#docker  run  -t -v  $(pwd):/mydata -w /mydata --name imeta_container$1 imeta_image$1   #works
+#docker run --name imeta_container$1 imeta_image$1 # now works for runTest1
+docker  run  -t -v  $(pwd):/mydata -w /mydata --name imeta_container$1 imeta_image$1   #works

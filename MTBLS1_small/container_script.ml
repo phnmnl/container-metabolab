@@ -7,12 +7,7 @@ START MLScript
 
 % Read in 1D raw NMR data (Bruker/Agilent)
 read1d
-%    dataPath: /mydata/ADG10003u_[116] %works
-%    dataPath: /mydata/ADG10003u_[117] %works 
-%    dataPath: /mydata/ADG10003u_[116:117]  %only 116 is in matfile
- %   dataPath: /mydata/ADG19007u_[404] %works 
     dataPath: /mydata/ADG19007u_[404] /mydata/ADG10003u_[116:118] 
-%    dataPath: /mydata/ADG10003u_[116:117] /mydata/ADG19007u_[404] % only 116 is in matfile
     dataSets: 10  
     spcSet:   1
 endRead1d
@@ -68,7 +63,7 @@ metabolabParameters
     exportPath:      /mydata      % path for mat/bruker/tree file export
     brukerExpNumbers: bruker
     brukerDataSets:   bruker
-    exportFile:      myoutput  % directory name for mat/bruker/tree file export
+    exportFile:      MTBLS1output  % directory name for mat/bruker/tree file export
     moveSpectraBetweenWorkspaces: 0                         % Avoid duplication of data to save memory (if 1)
 endMetabolabParameters
 

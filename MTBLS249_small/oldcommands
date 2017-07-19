@@ -1,0 +1,10 @@
+#!/bin/bash
+# install docker on your computer
+export pwd=$(pwd)
+cd /ldata/reedma/docker_stuff/container-metabolab
+docker image rm --force imeta_image$1
+docker build -t imeta_image$1 .
+cd $pwd
+docker rm -f imeta_container$1
+docker  run  -t -v  /ldata/reedma/docker_stuff/container-metabolab/MTBLS249_small:/mydata -w /mydata --name imeta_container$1 imeta_image$1
+
