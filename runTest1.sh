@@ -8,6 +8,8 @@ mv * ../
 cd ..
 rm -r MTBLS1_small.zip MTBLS1_small
 
+echo "no data supplied to fetching some to test container"
+
 # check that software was added to image 
 if ! [ -e "/usr/local/bin/MATLAB_Runtime" ]; then
 	echo "MATLAB Runtime not installed in image"
