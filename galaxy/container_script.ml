@@ -7,8 +7,15 @@ START MLScript
 
 % Read in 1D raw NMR data (Bruker/Agilent)
 read1d
-    dataPath: /mydata/bruker_data/ 
-    dataSets: 1 2 3
+%two options, if one dataset with incremented experiment numbers
+%   dataPath /mydata/datsetname
+%   dataSets:all  other options: odd or even or a list of expnos or a pattern eg 10:5:100 which would read in 10,15,20,25,...,95,100
+%
+% or if many datasets all with the same experiment number
+%   eg 
+%   dataPath: /mydata/ 
+    dataPath: /mydata/ADG19007u_[404] /mydata/ADG10003u_[116:118]  
+    dataSets: 10  
     spcSet:   1
 endRead1d
 
@@ -62,7 +69,8 @@ metabolabParameters
     noiseEnd:        10      % end of noise region [ppm]
     exportPath:      /mydata      % path for mat/bruker/tree file export
     brukerExpNumbers: bruker
-    exportFile:      testExport_gui2  % directory name for mat/bruker/tree file export
+    brukerDataSets:   bruker
+    exportFile:      myoutput  % directory name for mat/bruker/tree file export
     moveSpectraBetweenWorkspaces: 0                         % Avoid duplication of data to save memory (if 1)
 endMetabolabParameters
 
@@ -81,8 +89,9 @@ metabolabCommands
     paretoScale:        0
     glogScale:          0
     exportBruker:       1
-    exportMatFile:      0
+    exportMatFile:      1
     exportTreeFile:     0
+    exportBatmanFile:   1
 endMetabolabCommands
 
 % Create IsaTab file

@@ -1,32 +1,32 @@
 #!/bin/bash
 
 if cmp -s s_NEWST123.txt outputted_files/s_NEWST123.txt; then
-    echo "s files have the same content" >> output_check
+    echo "s files have the same content" > output_check
 else
     echo "s files do NOT have the same content" >> output_check
-f
+fi
 if cmp -s MTBLS1output.mat outputted_files/MTBLS1output.mat; then
     echo "pre-processed datastructures identical" >> output_check
 else
-    echo "pre-processed datastructures not identical - MTBLS1output.mat problem" >> output_check
-f
-if cmp -s a _NEWST123_metabolite_profiling_NMR_spectroscopy.txt outputted_files/a_NEWST123_metabolite_profiling_NMR_spectroscopy.txt; then
+    echo "pre-processed datastructures not identical" >> output_check
+fi
+if cmp -s a_NEWST123_metabolite_profiling_NMR_spectroscopy.txt outputted_files/a_NEWST123_metabolite_profiling_NMR_spectroscopy.txt; then
     echo "isatab assay files identical" >> output_check
 else
     echo "isatab assay files not identical - a_.txt file problem" >> output_check
-f
+fi
 if cmp -s metabolabnotgui.mat outputted_files/metabolabnotgui.mat; then
     echo "mat files have the same content" >> output_check
 else
     echo "mat files do NOT have the same content" >> output_check
-f
-if cmp -s MTBLS1output_batman.csv outputted_files/s_NEWST123.txt; then
+fi
+if cmp -s MTBLS1output_batman.csv outputted_files/MTBLS1output_batman.csv; then
     echo "batman files have the same content" >> output_check
 else
     echo "batman files do NOT have the same content" >> output_check
-f
+fi
 if cmp -s i_Investigation.txt outputted_files/i_Investigation.txt; then
-    echo "s files have the same content" >> output_check
+    echo "i files have the same content" >> output_check
 else
-    echo "s files do NOT have the same content" >> output_check
-f
+    echo "i files do NOT have the same content" >> output_check
+fi

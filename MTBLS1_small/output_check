@@ -1,3 +1,6 @@
 s files have the same content
-a_*.txt isatab assay files identical
+pre-processed datastructures not identical
+isatab assay files identical
+mat files do NOT have the same content
 batman files have the same content
+i files do NOT have the same content
