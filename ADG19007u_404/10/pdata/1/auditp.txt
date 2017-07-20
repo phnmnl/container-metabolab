@@ -1,0 +1,21 @@
+##TITLE= Audit trail, TopSpin 3.5 pl 7
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= reedma
+$$ /ldata/reedma/docker_stuff/MTBLS1/ADG19007u_404/10/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, WHAT)
+(   1,<2004-05-19 04:21:14.14 +100>,<mse>,<UKT01948>,
+      <created by zg, POWCHK disabled, PULCHK disabled
+       configuration hash MD5:
+       FF F8 F2 09 52 6F F6 F4 58 4A DF C1 4C 18 5C FD
+       data hash MD5: 64K
+       43 81 00 53 83 5E FC 4E 7B 1B 31 61 8D 06 F6 F1>)
+(   2,<2017-05-16 12:26:09.734 +0100>,<reedma>,<balrog>,<proc1d>,<TopSpin 3.5.7>,
+      <Start of raw data processing
+       fp FT_mod = 6 PKNL = 1 PHC0 = -40.13651 PHC1 = -9.897324 SI = 64K 
+       data hash MD5: 64K
+       A0 E4 C8 35 6E 50 6B AF 14 71 2E 6C F7 BD B1 1F>)
+##END=
+
+$$ hash MD5
+$$ 09 17 C5 89 3A AC 2F 21 8C 45 BC 9E BE 44 D4 85
