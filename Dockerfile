@@ -20,7 +20,7 @@ ADD runTest1.sh /usr/local/bin/runTest1.sh
 RUN chmod +x /usr/local/bin/runTest1.sh
 
 
-#ENTRYPOINT ["/usr/local/bin/metabolab1d/run_MetaboLab1D.sh","/usr/local/bin/MATLAB_Runtime/v91","/mydata/container_script.ml"]
-ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
+ENTRYPOINT ["/usr/local/bin/metabolab1d/run_MetaboLab1D.sh","/usr/local/bin/MATLAB_Runtime/v91","/mydata/container_script.ml"]
+#ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
 
 
