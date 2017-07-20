@@ -8,7 +8,7 @@ mv * ../
 cd ..
 rm -r MTBLS1_small.zip MTBLS1_small
 
-echo "no data supplied to fetching some to test container"
+echo "no data supplied so fetching some to test container"
 
 # check that software was added to image 
 if ! [ -e "/usr/local/bin/MATLAB_Runtime" ]; then
@@ -60,3 +60,4 @@ fi
 echo "listing some of the files created"
 ls MTBLS1*
 
+echo "Something is wrong if this is the output from Galaxy - data not found"

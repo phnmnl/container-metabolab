@@ -1,7 +1,0 @@
-#!/bin/bash
-if [ -e container_script.ml ]
-then
-   echo "OK"
-else 
-   echo "add in script"
-fi
