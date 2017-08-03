@@ -53,7 +53,7 @@ This software has been adapted to function without a graphical user interface in
 ### Clone the container:
 
 ```bash
-git clone https://github.com/reedmac/container-metabolab
+git clone https://github.com/phnmnl/container-metabolab
 ```
 ### Initial testing using the MTBLS1_small dataset:
 
