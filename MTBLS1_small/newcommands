@@ -1,7 +1,8 @@
 #!/bin/bash
 # install docker on your computer
+# git clone https://github.com/phnmnl/container-metabolab
 export pwd=$(pwd)
-cd /ldata/reedma/docker_stuff/container-metabolab  # directory containing dockerfile
+cd /ldata/reedma/docker_stuff/container-metabolab  # change to path to directory containing dockerfile
 docker image rm --force imeta_image$1
 docker build -t imeta_image$1 .
 cd $pwd
