@@ -25,7 +25,6 @@ ENV PATH=/usr/local/bin:$PATH
 
 WORKDIR /mydata
 
-#ENTRYPOINT ["/usr/local/bin/metabolab1d/run_MetaboLab1D.sh","/usr/local/bin/MATLAB_Runtime/v91","/mydata/container_script.ml"]
 #ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
 ENTRYPOINT ["/usr/local/bin/runMetabolab.sh"]
 

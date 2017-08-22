@@ -46,7 +46,7 @@ This software has been adapted to function without a graphical user interface in
 
 ##  Git Repository
 
-- https://github.com/reedmac/container-metabolab
+- https://github.com/phnmnl/container-metabolab
 
 ## Installation
 
@@ -72,7 +72,7 @@ Examine the files 'output_check' and 'installed_ok' in MTBLS1_small for error me
 
 First, make sure the entrypoint in the Dockerfile is:
 
-ENTRYPOINT ["/usr/local/bin/metabolab1d/run_MetaboLab1D.sh","/usr/local/bin/MATLAB_Runtime/v91","/mydata/container_script.ml"]
+ENTRYPOINT ["/usr/local/bin/runMetabolab.sh"]
 
 Secondly, remove any old images and build the docker image:
 
@@ -86,7 +86,7 @@ docker build -t imeta_image1 .
 
 Next, prepare the data directory:
 
-It must contain your metabolab script defining how the data should be processed. This must be called container_script.ml to match the name in Dockerfile.
+It must contain your metabolab script defining how the data should be processed. This must be called container_script.ml.
 
 
 Finally remove any old container and run the container:
@@ -100,6 +100,18 @@ docker  run  -t -v  /path/to/your/data/directory:/mydata -w /mydata --name imeta
 ```
 
 The results should now be in your data directory.
+
+
+
+## Helpful videos
+
+
+- Installing metabolab locally - https://youtu.be/VTCNh0a_HRQ 
+
+- MetaboLab in Galaxy - https://youtu.be/vYtmNZJIk2A
+
+- MetaboLab scripting explained - https://youtu.be/MRHB_yR7RFw
+
 
 ## Publications
 
