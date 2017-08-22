@@ -60,4 +60,3 @@ fi
 echo "listing some of the files created"
 ls MTBLS1*
 
-echo "Something is wrong if this is the output from Galaxy - data not found"
