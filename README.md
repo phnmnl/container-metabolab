@@ -89,7 +89,7 @@ Next, prepare the data directory:
 It must contain your metabolab script defining how the data should be processed. This must be called container_script.ml.
 
 
-Finally remove any old container and run the container:
+Finally remove the old container (if there is one) and run the container:
 
 ```bash
 docker rm imeta_container1
