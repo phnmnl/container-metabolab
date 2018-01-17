@@ -1,6 +1,6 @@
 # comment out the entrypoint line from Dockerfile
-docker image rm --force imeta_image1
-docker build -t imeta_image1 .
+#docker image rm --force imeta_image1
+#docker build -t imeta_image1 .
 docker rm -f imeta_container1
-docker  run  -t -i -v  /ldata/reedma/docker_stuff/example_data:/mydata -w /mydata --name imeta_container1 imeta_image1
+docker  run  -t -i -v  /ldata/reedma/container-metabolab/MTBLS1_small:/mydata -w /mydata --name imeta_container1 imeta_image1
 

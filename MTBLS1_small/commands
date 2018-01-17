@@ -3,7 +3,7 @@
 # Download Dockerfile etc from https://github.com/phnmnl/container-metabolab by:
 # git clone https://github.com/phnmnl/container-metabolab
 export pwd=$(pwd)
-cd /ldata/reedma/docker_stuff/container-metabolab  # directory containing dockerfile
+cd /ldata/reedma/container-metabolab  # directory containing dockerfile
 docker image rm --force imeta_image$1
 docker build -t imeta_image$1 .
 cd $pwd

@@ -1,0 +1,5 @@
+On the target computer, append the following to your LD_LIBRARY_PATH environment variable:
+
+/usr/local/bin/MATLAB_Runtime/v91/runtime/glnxa64:/usr/local/bin/MATLAB_Runtime/v91/bin/glnxa64:/usr/local/bin/MATLAB_Runtime/v91/sys/os/glnxa64:
+
+
