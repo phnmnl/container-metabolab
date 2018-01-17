@@ -6,8 +6,7 @@ LABEL version=0.6
 
 LABEL software=metabolab
 
-
-RUN apt-get -y update && apt-get -y install --no-install-recommends libxtst6 libxrandr2 libxt6 wget zip unzip && \
+RUN apt-get -y update && apt-get -y install --no-install-recommends  libxtst6 libxrandr2 libxt6 wget zip unzip && \
 wget -P /usr/local/bin http://beregond.bham.ac.uk/~nmrlab/metabolabBinary1DLinux/MATLAB_Runtime.zip && \
 wget  -P /usr/local/bin http://beregond.bham.ac.uk/~nmrlab/metabolabBinary1DLinux/metabolab1d.zip && \
 unzip -d /usr/local/bin /usr/local/bin/MATLAB_Runtime.zip && \
