@@ -26,7 +26,7 @@ ENV PATH=/usr/local/bin:$PATH
 
 WORKDIR /mydata
 
-#ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
 ENTRYPOINT ["/usr/local/bin/runMetabolab.sh"]
+ENTRYPOINT ["/usr/local/bin/runTest1.sh"]
 
 
