@@ -1,7 +1,7 @@
 ![Logo](metabolab.png)
 
 # MetaboLab 
-Version: 2018.01171502 
+Version: 0.99.8.8 
 
 ## Short Description
 
