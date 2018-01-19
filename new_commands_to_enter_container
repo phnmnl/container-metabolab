@@ -1,0 +1,6 @@
+#!/bin/bash
+docker rm -f imeta_container1
+#docker  run  -t -v  $(pwd):/mydata -w /mydata --name imeta_container$1 imeta_image$1   #works
+#docker  run  -t -i -v  /ldata/reedma/container-metabolab/MTBLS1_small:/mydata -w /mydata --name imeta_container1 imeta_image1
+# to enter container
+docker run -it --entrypoint=bash -v  /ldata/reedma/container-metabolab/MTBLS1_small:/mydata -w /mydata --name imeta_container1 imeta_image1

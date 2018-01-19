@@ -3,10 +3,10 @@
 # Download Dockerfile etc from https://github.com/phnmnl/container-metabolab by:
 # git clone https://github.com/phnmnl/container-metabolab
 export pwd=$(pwd)
-cd /ldata/reedma/docker_stuff/container-metabolab  # directory containing dockerfile
+cd /ldata/reedma/container-metabolab  # directory containing dockerfile
 docker image rm --force imeta_image$1
 docker build -t imeta_image$1 .
 cd $pwd
 docker rm -f imeta_container$1
 # path below is path to directory containing your container_script.ml
-docker  run  -t -v  $(pwd):/mydata -w /mydata --name imeta_container$1 imeta_image$1 
+docker  run  -it --entrypoint=runMetabolab.sh -v  $(pwd):/mydata -w /mydata --name imeta_container$1 imeta_image$1 
